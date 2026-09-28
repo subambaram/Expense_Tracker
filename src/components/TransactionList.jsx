@@ -15,18 +15,17 @@ function TransactionList({ transactions, onDelete }) {
   ]
 
   // Filter transactions
-  let filteredTransactions = transactions.filter(transaction => {
+  const filteredTransactions = transactions.filter(transaction => {
+  const matchesType =
+    typeFilter === 'all' ||
+    transaction.type === typeFilter
 
-    const typeMatch =
-      typeFilter === 'all' ||
-      transaction.type === typeFilter
+  const matchesCategory =
+    categoryFilter === 'all' ||
+    transaction.category === categoryFilter
 
-    const categoryMatch =
-      categoryFilter === 'all' ||
-      transaction.category === categoryFilter
-
-    return typeMatch && categoryMatch
-  })
+  return matchesType && matchesCategory
+})
 
   // Sort transactions
   filteredTransactions.sort((a, b) => {
