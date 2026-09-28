@@ -28,14 +28,13 @@ function App() {
     ])
   }
 
-  const deleteTransaction = (id) => {
-    setTransactions((oldTransactions) =>
-      oldTransactions.filter(
-        (transaction) => transaction.id !== id
-      )
+const deleteTransaction = (transactionId) => {
+  setTransactions((oldTransactions) =>
+    oldTransactions.filter(
+      (transaction) => transaction.id !== transactionId
     )
-  }
-
+  )
+}
   return (
     <div className="app">
 
