@@ -1,32 +1,51 @@
 # Personal Expense Tracker
 
-A simple React application for recording income and expenses. This starter project demonstrates reusable components, props, state, controlled form inputs, list rendering, and conditional rendering.
+This is a simple Personal Expense Tracker made using React. It allows users to add income and expenses, view their balance, delete transactions, and filter or sort transactions.
 
-## Technologies
-
-- React
-- Vite
-- JavaScript
-- CSS
-- React Router
-
-## Run the project
-
-```bash
-npm install
-npm run dev
-```
-
-## Current features
+## Features
 
 - Add income and expense transactions
-- Show balance, total income, and total expenses
+- Add amount, category, and description
+- Calculate total income
+- Calculate total expenses
+- Show current balance
 - Delete transactions
-- Display transactions using reusable components
-- Responsive basic layout
+- Filter transactions by type
+- Filter transactions by category
+- Sort transactions by newest or oldest
+- Save transactions using localStorage
+- Responsive design for different screen sizes
 
-## To be completed
+## Technologies Used
 
-- localStorage persistence
-- Filtering and sorting
-- Additional improvements and optional stretch goals
+- React
+- JavaScript
+- HTML
+- CSS
+- Vite
+- Git and GitHub
+
+## React Concepts Used
+
+- Functional components
+- Props
+- useState
+- useEffect
+- Controlled forms
+- Conditional rendering
+- Array map()
+- localStorage
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── Balance.jsx
+│   ├── TransactionForm.jsx
+│   ├── TransactionList.jsx
+│   └── TransactionItem.jsx
+├── App.jsx
+├── index.css
+└── main.jsx
