@@ -127,6 +127,10 @@ form button {
 }
 
 @media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+
   .summary {
     grid-template-columns: 1fr;
   }
@@ -140,25 +144,17 @@ form button {
     width: 100%;
     justify-content: space-between;
   }
-}
 
-.filters {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-}
+  .filters {
+    flex-direction: column;
+  }
 
-.filters div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
+  .filters div {
+    width: 100%;
+  }
 
-.filters select {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  .filters select {
+    width: 100%;
+  }
 }
-
 
