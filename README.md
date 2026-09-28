@@ -36,6 +36,21 @@ This is a simple Personal Expense Tracker made using React. It allows users to a
 - Array map()
 - localStorage
 
+
+## Screenshots
+
+### Main Page
+
+![Main Page](./screenshots/main-page.png)
+
+### Transactions and Filters
+
+![Transactions](./screenshots/transactions.png)
+
+### Mobile View
+
+![Mobile View](./screenshots/mobile-view.png)
+
 ## Project Structure
 
 ```text
