@@ -6,13 +6,15 @@ import TransactionList from './components/TransactionList'
 
 function App() {
 
-  const [transactions, setTransactions] = useState(() => {
-    const savedTransactions = localStorage.getItem('transactions')
+const [transactions, setTransactions] = useState(() => {
+  const savedTransactions = localStorage.getItem('transactions')
 
-    return savedTransactions
-      ? JSON.parse(savedTransactions)
-      : []
-  })
+  if (savedTransactions) {
+    return JSON.parse(savedTransactions)
+  }
+
+  return []
+})
 
   useEffect(() => {
     localStorage.setItem(
