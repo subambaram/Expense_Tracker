@@ -18,14 +18,14 @@ if (Number(amount) <= 0) {
   return
 }
 
-    const newTransaction = {
-      id: Date.now(),
-      type,
-      amount,
-      category,
-      description,
-      date: new Date().toLocaleDateString()
-    }
+const newTransaction = {
+  id: Date.now(),
+  type,
+  amount: Number(amount),
+  category,
+  description,
+  date: new Date().toLocaleDateString()
+}
 
     onAddTransaction(newTransaction)
 
